@@ -1,0 +1,32 @@
+version: '3'
+services:
+  react:
+    build:
+      context: ./partiel1285
+    volumes:
+      - ./partiel1285:/app
+    ports:
+      - '3000:80'
+  strapi:
+    build:
+      context: ./my-strapi-project
+    volumes:
+      - ./my-strapi-project:/app
+    ports:
+      - '1337:1337'
+    env_file:
+      - ./my-strapi-project/.env
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: strapi
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:

@@ -1,0 +1,28 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.3.4",
+    "strapi": "^3.6.0",
+    "strapi-admin": "^3.6.0",
+    "strapi-connector-bookshelf": "^3.6.0",
+    "strapi-plugin-content-manager": "^3.6.0",
+    "strapi-plugin-content-type-builder": "^3.6.0",
+    "strapi-plugin-email": "^3.6.0",
+    "strapi-plugin-upload": "^3.6.0",
+    "strapi-plugin-users-permissions": "^3.6.0",
+    "strapi-utils": "^3.6.0",
+    "styled-components": "^5.3.11"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,94 @@
+/* src/components/Calendar.css */
+
+.calendar-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 50px auto;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .react-calendar {
+    width: 100%;
+    border: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  .react-calendar__tile {
+    max-width: initial !important;
+  }
+  
+  .react-calendar__tile--now {
+    background: #007bff;
+    color: white;
+  }
+  
+  .react-calendar__tile--active {
+    background: #0056b3;
+    color: white;
+  }
+  
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus {
+    background: #003d7a;
+    color: white;
+  }
+  
+  .react-calendar__navigation button {
+    color: #007bff;
+  }
+  
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #e6e6e6;
+  }
+  
+  .react-calendar__navigation button[disabled] {
+    background-color: #f0f0f0;
+  }
+  
+  .reserve-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .reserve-button:hover {
+    background-color: #218838;
+  }
+  
+  p {
+    color: red;
+  }
+  
